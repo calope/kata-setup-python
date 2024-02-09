@@ -20,3 +20,9 @@ def test_at_least_one_lowercase():
     
     assert not Password.is_valid(invalid_password)
 
+
+def test_at_least_one_number():
+    
+    invalid_password = "AbCDEFGH"
+    
+    assert not Password.is_valid(invalid_password)
