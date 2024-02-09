@@ -4,7 +4,7 @@ from src.password import Password
 VALID_PASSWORD = "AABBaa1_"
 
 def test_minimun_eight_length():
-    
+
     invalid_password = VALID_PASSWORD[:3]
     
     assert not Password.is_valid(invalid_password)
@@ -38,3 +38,4 @@ def test_at_least_one_underscore():
     invalid_password = VALID_PASSWORD.replace("_", "A")
     
     assert not Password.is_valid(invalid_password)
+    
